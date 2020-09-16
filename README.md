@@ -1,2 +1,30 @@
-# CAGE-CAGE-Cap-Analysis-of-Gene-Expression-data-analysis
-Repository for the analysis of CAGE data using perl and CAGEr
+# CAGE-Cap-Analysis-of-Gene-Expression-data-analysis
+Repository for the analysis of CAGE data 
+
+## What is CAGE?
+CAGE (Kodzius et al. 2006) is a high-throughput method for transcriptome analysis that utilizes cap trapping (Carninci et al. 1996), a technique based on the biotinylation of the 7-methylguanosine cap of Pol II transcripts, to pulldown the 5′-complete cDNAs reversely transcribed from the captured transcripts.
+
+CAGE provides information on two aspects of capped transcriptome: genome-wide 1bp-resolution map of TSSs and transcript expression levels
+
+## Getting Started
+This instructions will explain how to analyze CAGE data using Perl scripts starting from fastq files or TSS bed files
+## Prerequisites
+Perl
+Histat2
+
+## Work-flow
+1.- Fastq to BAM
+2. Generate CTSS from Bam files
+3. Pulling all CTSS into a big CTSS file
+    3.3 4. Convert the big ctss file into bigwig (big wiggle)  (for visualization in IGV (genome browser))
+4.  De Novo clustering using Paraclu
+5. Filtering out noise from genomic backgrounds
+6. Annotate filtered tssClusters to genes
+7. Count the expression level of the tssClusters in each sample
+
+
+
+
+
+## Acknowledgments
+Perl scripts were developed in house by Dr. Chung from IMS RIKEN
