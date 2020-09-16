@@ -13,7 +13,7 @@ Perl
 Histat2
 
 ## Work-flow
-1.- Fastq to BAM
+1. Fastq to BAM
 2. Generate CTSS from Bam files
 3. Pulling all CTSS into a big CTSS file
     3.3 4. Convert the big ctss file into bigwig (big wiggle)  (for visualization in IGV (genome browser))
