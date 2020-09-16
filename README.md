@@ -13,14 +13,14 @@ Perl
 Histat2
 
 ## Work-flow
-1. Fastq to BAM
+1. Mapping into a genome  > Fastq to BAM
 2. Generate CTSS from Bam files
 3. Pulling all CTSS into a big CTSS file
-    3.3 4. Convert the big ctss file into bigwig (big wiggle)  (for visualization in IGV (genome browser))
-4.  De Novo clustering using Paraclu
-5. Filtering out noise from genomic backgrounds
-6. Annotate filtered tssClusters to genes
-7. Count the expression level of the tssClusters in each sample
+4. Convert the big ctss file into bigwig (big wiggle)  (for visualization in IGV (genome browser))
+5.  De Novo clustering using Paraclu
+6. Filtering out noise from genomic backgrounds
+7. Annotate filtered tssClusters to genes
+8. Count the expression level of the tssClusters in each sample
 
 
 
