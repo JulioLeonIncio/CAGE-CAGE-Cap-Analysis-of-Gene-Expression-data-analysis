@@ -22,7 +22,7 @@ Histat2
 7. Annotate filtered tssClusters to genes
 8. Count the expression level of the tssClusters in each sample
 
-Output files from steps 4 to 6 inspected in IGV. Regulator element (promoter) at 5'End of the NEGR1 gene
+Output files from steps 4 to 6 inspected in IGV. Regulatory element (promoter) at 5'End of the NEGR1 gene
 ![File inspection in IGV from 4 to 6](https://github.com/JulioLeonIncio/CAGE-CAGE-Cap-Analysis-of-Gene-Expression-data-analysis/blob/master/image.png)
 
 
