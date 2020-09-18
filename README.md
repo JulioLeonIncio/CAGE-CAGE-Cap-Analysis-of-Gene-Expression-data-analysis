@@ -22,7 +22,7 @@ Histat2
 7. Annotate filtered tssClusters to genes
 8. Count the expression level of the tssClusters in each sample
 
-
+![File inspection in IGV from 4 to 6](https://github.com/JulioLeonIncio/CAGE-CAGE-Cap-Analysis-of-Gene-Expression-data-analysis/blob/master/image.png)
 
 
 
