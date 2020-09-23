@@ -26,6 +26,11 @@ Histat2
 * script:CTSSBedPooler_v0.2.pl
 * input:	a list of all ctss files
 * output:	one big ctss file
+example:
+```
+perl /home/julio.l/data/CAGE_CHUNG_perl_scripts/CTSSBedPooler_v0.2.pl --CTSSListPath=/home/julio.l/data/CAGE_data_senescent/ctss_path.txt --outputPrefix=JL_SC --outDir=/home/julio.l/data/CAGE_data_senescent
+```
+
 4. Convert the big ctss file into bigwig (big wiggle)  (for visualization in IGV, genome browser)
 * script:CTSSToBigwig_v0.1.pl
 * input: a ctss file
