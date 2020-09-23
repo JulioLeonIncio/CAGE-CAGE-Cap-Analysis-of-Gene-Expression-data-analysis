@@ -7,7 +7,7 @@ Repository for the analysis of CAGE data
 *CAGE provides information on two aspects of capped transcriptome: genome-wide 1bp-resolution map of TSSs and transcript expression levels
 
 ## Getting Started
-This instructions will explain how to analyze CAGE data using Perl scripts starting from fastq files or TSS bed files
+This  instructions will explain how to analyze CAGE data using Perl scripts starting from fastq files or TSS bed files
 ## Prerequisites
 Perl
 Histat2
