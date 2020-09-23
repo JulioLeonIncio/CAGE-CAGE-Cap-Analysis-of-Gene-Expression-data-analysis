@@ -44,6 +44,7 @@ perl /home/julio.l/data/CAGE_CHUNG_perl_scripts/CTSSBedPooler_v0.2.pl --CTSSList
 * input: tssCluster bed
 * output:a set of tssCluster bed files filtered at different confidence intervals
 7. Annotate filtered tssClusters to genes
+* Note: based on user defined upstream and downstream TSS range (--up_end5Rng= and --dn_end5Rng=), e.g. --up_end5Rng=500 and --dn_end5Rng=100 means a tssClusters will be assigned to a gene if it is within the -500 to +100bp region of the annotated TSS of a gene
 * script: tssClusterAnnotator_v0.1.pl
 * input: tssCluster bed $ a set of gene models (GENECODE or  FANTOMCAT)
 * output: gene annotations informations per tssCluster & bed files 
