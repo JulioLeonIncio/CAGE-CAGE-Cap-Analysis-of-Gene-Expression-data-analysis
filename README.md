@@ -1,6 +1,6 @@
 # CAGE-Cap-Analysis-of-Gene-Expression-data-analysis
 Repository for the analysis of CAGE data 
-(JL, 2020)
+(By Julio Leon, 2020)
 ## What is CAGE?
 *CAGE (Kodzius et al. 2006) is a high-throughput method for transcriptome analysis that utilizes cap trapping (Carninci et al. 1996), a technique based on the biotinylation of the 7-methylguanosine cap of Pol II transcripts, to pulldown the 5′-complete cDNAs reversely transcribed from the captured transcripts.
 
@@ -22,7 +22,8 @@ Histat2
 7. Annotate filtered tssClusters to genes
 8. Count the expression level of the tssClusters in each sample
 
-
+Output files from steps 4 to 6 inspected in IGV. Regulatory element (promoter) at 5'End of the NEGR1 gene
+![File inspection in IGV from 4 to 6](https://github.com/JulioLeonIncio/CAGE-CAGE-Cap-Analysis-of-Gene-Expression-data-analysis/blob/master/image.png)
 
 
 
