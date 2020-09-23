@@ -14,13 +14,38 @@ Histat2
 
 ## Work-flow
 1. Mapping into a genome  > Fastq to BAM
+*script: 2020022113.run_hisat2_map
+Note: hisat2 and other splice-junction aware aligners can be used like STAR, tophat.
+*input: fastq and hg38 hisat2 index
+*output: one bam file for each sample 
 2. Generate CTSS from Bam files 
+script: 
+*input: bam files
+*output: bed files
 3. Pulling all CTSS into a big CTSS file
-4. Convert the big ctss file into bigwig (big wiggle)  (for visualization in IGV (genome browser))
+*script:CTSSBedPooler_v0.2.pl
+*input:	a list of all ctss files
+*output:	one big ctss file
+4. Convert the big ctss file into bigwig (big wiggle)  (for visualization in IGV, genome browser)
+*script:CTSSToBigwig_v0.1.pl
+*input: a ctss file
+*output: two bigwig files (plus and minus strand bigwig files)
 5. De Novo clustering using Paraclu
+*script: paracluRunner_v0.2.pl
+*input: pooled ctss file
+output: tssCluster bed files
 6. Filtering out noise from genomic backgrounds
+*script:tssClusterFilterer_v0.1.pl
+input: tssCluster bed
+*output:a set of tssCluster bed files filtered at different confidence intervals
 7. Annotate filtered tssClusters to genes
+*script: tssClusterAnnotator_v0.1.pl
+*input: tssCluster bed $ a set of gene models (GENECODE or  FANTOMCAT)
+*output: gene annotations informations per tssCluster & bed files 
 8. Count the expression level of the tssClusters in each sample
+*script: promoterCTSSCounter_v0.4.pl
+*input: a list of ctss files & a tssCluster bed file
+*output: a tssCluster based count matrix for all samples & a tssCluster based normalized expression (rle_cpm, TPM and TMM) matrix for all samples
 
 Output files from steps 4 to 6 inspected in IGV. Regulatory element (promoter) at 5'End of the NEGR1 gene
 ![File inspection in IGV from 4 to 6](https://github.com/JulioLeonIncio/CAGE-CAGE-Cap-Analysis-of-Gene-Expression-data-analysis/blob/master/image.png)
