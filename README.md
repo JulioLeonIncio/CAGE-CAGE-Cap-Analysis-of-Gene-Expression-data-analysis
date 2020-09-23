@@ -15,9 +15,9 @@ Histat2
 ## Work-flow
 1. Mapping into a genome  > Fastq to BAM
 - script: 2020022113.run_hisat2_map
-  Note: hisat2 and other splice-junction aware aligners can be used like STAR, tophat.
-  *input: fastq and hg38 hisat2 index
-  *output: one bam file for each sample 
+- Note: hisat2 and other splice-junction aware aligners can be used like STAR, tophat.
+ input: fastq and hg38 hisat2 index
+  * output: one bam file for each sample 
 2. Generate CTSS from Bam files 
 script: 
 *input: bam files
