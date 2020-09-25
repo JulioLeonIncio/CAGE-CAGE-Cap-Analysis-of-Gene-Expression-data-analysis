@@ -18,6 +18,7 @@ Histat2
 * Note: hisat2 and other splice-junction aware aligners can be used like STAR, tophat.
 * input: fastq and hg38 hisat2 index
 * output: one bam file for each sample 
+* Note: Other way to do this step : 
 2. Generate CTSS from Bam files 
 * script: 
 * input: bam files
